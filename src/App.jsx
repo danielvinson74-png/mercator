@@ -4,93 +4,96 @@ function App() {
   return (
     <div className="font-display overflow-x-hidden antialiased text-slate-100 bg-background-dark">
       {/* 1. HERO SECTION */}
-      <div className="relative min-h-screen w-full flex flex-col bg-marine">
-        <header className="relative z-50 flex items-center justify-between px-6 lg:px-16 py-8">
-          <div className="flex items-center gap-3">
-            <div className="bg-white text-marine p-2 rounded-full flex items-center justify-center">
-              <span className="material-symbols-outlined text-2xl">directions_boat</span>
-            </div>
-            <h2 className="text-white text-2xl font-black tracking-tighter">MERCATOR</h2>
-          </div>
-          <nav className="hidden md:flex items-center gap-10">
-            <a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Услуги</a>
-            <a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Флот</a>
-            <a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Кейсы</a>
-            <a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Контакты</a>
-          </nav>
-          <button className="border border-white/40 hover:border-white text-white px-8 py-2 rounded-full text-sm font-bold transition-all bg-white/5">
-            Оставить заявку
-          </button>
-        </header>
-
-        <main className="flex-grow flex flex-col relative px-6 lg:px-16 pb-20 pt-10">
-          <div className="absolute inset-0 flex items-start justify-center pointer-events-none select-none overflow-hidden pt-20">
-            <h1 className="text-[25vw] leading-[0.8] tracking-[-0.05em] font-black text-white/10 uppercase">ФЛОТ</h1>
-          </div>
-          <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center">
-            <div className="absolute top-0 right-10 lg:right-20 z-30 -translate-y-4">
-              <div className="bg-slate-900 text-white w-28 h-28 rounded-full flex flex-col items-center justify-center text-center p-4 border border-white/10 shadow-2xl -rotate-12">
-                <span className="text-[8px] uppercase tracking-widest font-bold opacity-60">Service</span>
-                <span className="text-xs font-black leading-tight uppercase">Direct<br />Charter</span>
-                <span className="material-symbols-outlined text-primary text-lg mt-1 fill-1">verified</span>
-              </div>
-            </div>
-            <div className="relative z-20 w-full" style={{ transform: "perspective(1000px) rotateX(2deg) rotateY(-5deg) rotateZ(-2deg)" }}>
-              <img alt="Massive cargo container ship on blue ocean" className="w-full h-auto drop-shadow-[0_50px_50px_rgba(0,0,0,0.4)] rounded-[3rem]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGGvXzwHp7PD5NTCj2c0TZPqDQHpj7jjVWw2XCTk7AIwzpbK2ih1XWhMXKK62I-VURg_CxZgnCLWjZtyrjkyEbWEoOr-UZeOkfpv2SRiZVuwgnJMcKneCCbLYNuW90_W55fdiL6Phgj4Qr5f6KPsGxzSMiUtNxgef-uF1GS6oGFyX75mbIzWUvqplqJ5rqW165c4Pp5H5N8prPu7SMDDaMWDaAhzjeLruhzmAnoXsPOnAz2bEgSRLSwLOpg9feKyNpARoDeqBGBH7" />
-            </div>
-            <div className="relative z-40 -mt-10">
-              <button className="bg-primary text-slate-900 px-10 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-xl flex items-center gap-3">
-                <span>Рассчитать ставку фрахта</span>
-                <span className="material-symbols-outlined font-bold">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-16 max-w-4xl relative z-40">
-            <h2 className="text-white text-5xl lg:text-7xl font-black leading-[1.05] mb-6">
-              Устали от посредников? <br />
-              <span className="text-primary">Ваш груз — наш флот.</span>
-            </h2>
-            <p className="text-white/60 text-lg lg:text-xl font-medium max-w-2xl">
-              Прямое фрахтование судов из портов ДВ и ЮВА. Работаем без наценок и скрытых комиссий.
-            </p>
-          </div>
-        </main>
-        <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 blur-[150px] rounded-full pointer-events-none"></div>
-
-        <section className="bg-[#002a66]/80 backdrop-blur-sm border-t border-white/5 py-12 px-6 lg:px-16" style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
-          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
-            <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-primary text-3xl">anchor</span>
-              <div>
-                <p className="text-white font-bold text-sm uppercase tracking-tight">24/7 Порты</p>
-                <p className="text-white/40 text-[10px] uppercase font-bold">Полный контроль</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-primary text-3xl">inventory_2</span>
-              <div>
-                <p className="text-white font-bold text-sm uppercase tracking-tight">Любой груз</p>
-                <p className="text-white/40 text-[10px] uppercase font-bold">От 10 до 50 000 тонн</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <span className="material-symbols-outlined text-primary text-3xl">public</span>
-              <div>
-                <p className="text-white font-bold text-sm uppercase tracking-tight">Весь мир</p>
-                <p className="text-white/40 text-[10px] uppercase font-bold">Приоритет ДВ и ЮВА</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-primary text-3xl">shield_with_heart</span>
-              <div>
-                <p className="text-white font-bold text-sm uppercase tracking-tight">Страхование</p>
-                <p className="text-white/40 text-[10px] uppercase font-bold">Гарантия сохранности</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+<div className="relative min-h-screen w-full flex flex-col">
+<div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden z-0">
+<h1 className="huge-text font-black text-white/10 uppercase">ФЛОТ</h1>
+</div>
+<header className="relative z-50 flex items-center justify-between px-6 lg:px-16 py-8">
+<div className="flex items-center gap-3">
+<div className="bg-white text-marine p-2 rounded-full flex items-center justify-center">
+<span className="material-symbols-outlined text-2xl">directions_boat</span>
+</div>
+<h2 className="text-white text-2xl font-black tracking-tighter">MERCATOR</h2>
+</div>
+<nav className="hidden md:flex items-center gap-10">
+<a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Услуги</a>
+<a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Флот</a>
+<a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Кейсы</a>
+<a className="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Контакты</a>
+</nav>
+<button className="border border-white/40 hover:border-white text-white px-8 py-2 rounded-full text-sm font-bold transition-all bg-white/5">
+                Оставить заявку
+            </button>
+</header>
+<main className="flex-grow flex items-center relative z-10 px-6 lg:px-16 pb-20">
+<div className="max-w-7xl mx-auto w-full magazine-grid gap-12 lg:gap-20">
+<div className="relative z-40">
+<div className="inline-block px-4 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-full mb-8">
+<span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Direct Shipowner Access</span>
+</div>
+<h2 className="text-white text-5xl lg:text-[5.5rem] font-black leading-[1] mb-8 tracking-tight">
+                        Устали от <br/>
+<span className="text-white/40">посредников?</span><br/>
+                        Ваш груз — <br/>
+<span className="text-primary">наш флот.</span>
+</h2>
+<p className="text-white/70 text-lg lg:text-xl font-medium max-w-lg mb-10 leading-relaxed">
+                        Прямое фрахтование судов из портов ДВ и ЮВА. Мы убрали лишние звенья, чтобы вы получили лучшую ставку на рынке.
+                    </p>
+<div className="flex flex-wrap items-center gap-6">
+<button className="bg-primary text-slate-900 px-10 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl flex items-center gap-3">
+<span>Рассчитать ставку</span>
+<span className="material-symbols-outlined font-bold">arrow_forward</span>
+</button>
+<div className="flex items-center gap-3 text-white/60">
+<span className="material-symbols-outlined text-primary">verified_user</span>
+<span className="text-xs font-bold uppercase tracking-wider">Прямой контракт</span>
+</div>
+</div>
+</div>
+<div className="relative">
+<div className="relative z-30 group">
+<div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10 shadow-2xl overflow-hidden aspect-[4/5] flex items-center justify-center">
+<img alt="Massive cargo container ship" className="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGGvXzwHp7PD5NTCj2c0TZPqDQHpj7jjVWw2XCTk7AIwzpbK2ih1XWhMXKK62I-VURg_CxZgnCLWjZtyrjkyEbWEoOr-UZeOkfpv2SRiZVuwgnJMcKneCCbLYNuW90_W55fdiL6Phgj4Qr5f6KPsGxzSMiUtNxgef-uF1GS6oGFyX75mbIzWUvqplqJ5rqW165c4Pp5H5N8prPu7SMDDaMWDaAhzjeLruhzmAnoXsPOnAz2bEgSRLSwLOpg9feKyNpARoDeqBGBH7"/>
+</div>
+<div className="absolute -top-6 -right-6 z-40">
+<div className="bg-slate-900 text-white w-32 h-32 rounded-full flex flex-col items-center justify-center text-center p-4 border border-white/10 shadow-2xl rotate-12">
+<span className="text-[8px] uppercase tracking-widest font-bold opacity-60">Logistics</span>
+<span className="text-xs font-black leading-tight uppercase">Premium<br/>Carrier</span>
+<span className="material-symbols-outlined text-primary text-lg mt-1 fill-1">stars</span>
+</div>
+</div>
+<div className="absolute -bottom-4 -left-4 bg-white p-6 rounded-lg shadow-2xl max-w-[200px]">
+<p className="text-marine font-black text-2xl leading-none mb-1">200+</p>
+<p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider leading-tight">Рейсов совершено за последний месяц</p>
+</div>
+</div>
+<div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-white/5 rounded-full"></div>
+</div>
+</div>
+</main>
+<section className="relative z-20 bg-[#003685] border-t border-white/10 py-10 px-6 lg:px-16">
+<div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+<div className="flex flex-col gap-1">
+<span className="text-primary font-black text-3xl">0%</span>
+<p className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Агентская комиссия</p>
+</div>
+<div className="flex flex-col gap-1">
+<span className="text-white font-black text-3xl">48ч</span>
+<p className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Среднее время подачи</p>
+</div>
+<div className="flex flex-col gap-1">
+<span className="text-white font-black text-3xl">15</span>
+<p className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Собственных судов</p>
+</div>
+<div className="flex flex-col gap-1">
+<span className="text-white font-black text-3xl">HQ</span>
+<p className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Контроль погрузки</p>
+</div>
+</div>
+</section>
+<div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary/10 blur-[180px] rounded-full pointer-events-none"></div>
+</div>
 
       {/* 2. TRUST SECTION */}
       <section className="relative flex h-auto min-h-screen w-full flex-col bg-marine items-center justify-center overflow-hidden py-24">
